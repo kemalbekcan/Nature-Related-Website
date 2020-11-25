@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--Menü Başlangıç-->
+    <div class="menu-top">
+    <div class="menu-logo">
+        <a href="#"><img src="logo.png"></a>
+<div class="menu-link">
+    <a href="#">Hakkımda</a>
+    <a href="#">İletisim</a>
+    <a href="#">Doğa</a>
+
+    </div>
+    </div>
+    </div>
+    <!--Menü Bitiş -->
+  
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Orman Doğası</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img2.jpg" style="width:100%">
+            <div class="text">Buzullar</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img3.jpg" style="width:100%">
+            <div class="text">Kutup Işıkları</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img4.jpg" style="width:100%">
+            <div class="text">Dağlık Arazi</div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+<div class="nerede">
+<hr/>
+<h1>Anasayfa</h1>
+
+</div>
+<div class="icerik">
+<div class="kutu1">
+<div class="tanit">
+    <img src="2.jpg">
+</div>
+<div class="tanitim">
+    <p>Bu web sayfası doğanın katledilmesine karşı oluşturulan buna razı gelmeyen bir web sitesidir.</p>
+    <p>Bu web sayfası 2020 yılında yapılmış olup doğa olaylarına dikkat çekmek amacıyla yapılmıştır.</p>
+    <P>Tüm içerikleri saklıdır ve kopyalanması yasaktır.</P>
+</div>
+    
+</div>
+<div class="kutu2">
+<div class="yuvarlak">
+    <img src="1.jpg">
+</div>
+<div class="yazi">
+    <p>Doğayı korumalıyız, eğer korumazsak hayvanlar ölür ağaçlar olmazsa oksijensiz kalırız.</p>
+    <p>Doğada bir çok canlı vardır. Biz yerlere laylon plastik atıyoruz binlerce yıl doğada kalıyorlar. Çoğu hayvanın nesli
+    bizim yüzümüzden tükeniyor yada azalıyor.</p>
+</div>
+</div>
+<div class="kutu3">
+<div class="baslik">
+    <h3>Öne Çıkan İçerikler</h3>
+</div>
+<div class="icerikler">
+    <ul>
+        <li><a href="">Doğayı Koruma Görevi</a></li>
+        <li><a href="">Buzullar Eriyor</a></li>
+        <li><a href="">Kuraklık Artıyor</a></li>
+        <li><a href="">Sudan Bulaşan Hastalıklar</a></li>
+    </ul>
+</div>
+</div>
+
+</div>
+<div class="icerik2">
+<div class="kutu1">
+    <div class="sosyal"><h1>Sosyal Medya</h1>
+    </div>
+<div class="facebook">
+    <img src="facebook.png" width="50" height="50">
+</div>
+<div class="instagram">
+    <img src="instagram.png" width="60" height="60">
+</div>
+<div class="twitter">
+    <img src="twitter.png" width="60" height="60">
+</div>
+</div>
+
+<div class="kutu2">
+<div class="link">
+    <h3>Linkler</h3>
+</div>
+<div class="sirala">
+    <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletisim</a></li>
+        <li><a href="#">Doğa</a></li>
+        <li><a href="#">Adres</a></li>
+        <li><a href="#">Sosyal Medya</a></li>
+    </ul>
+</div>
+</div>
+<div class="kutu3">
+    <div class="ilet">
+        <h3>İletişim</h3>
+    </div>
+<div class="mail">
+    <address>
+        Mail:kemalbekcan@gmail.com
+        Telefon: +90 (537) 272 50 23<br>
+        Ev Telefonu:+0 (224) 241 71 23<br>
+        Address: Akpınar mah. 1.aycan sokak huzur apartmanı no:5 daire: 7 A/Blok Osmangazi/Bursa<br>
+        Posta Kodu: 16160
+    </address>
+</div>
+</div>
+
+</div>
+<div class="iletisim">
+    <hr>
+    <h2>Adres</h2>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.3104645513228!2d28.969813382960734!3d40.24815595988756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca14623025081d%3A0x2552747ad33f013b!2sAkp%C4%B1nar%2C%201.%20Aycan%20Sk%2C%2016150%20Osmangazi%2FBursa!5e0!3m2!1str!2str!4v1591889280557!5m2!1str!2str"
+    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
+    <address>
+        İletisim Bilgileri: 05372725023
+
+    </address>
+</div>
+<div class="footer">
+    <p>Copyright © 2020 Tüm Hakları Saklıdır.</p>
+</div>
+
+</body>
+</html>
